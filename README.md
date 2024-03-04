@@ -37,6 +37,16 @@ AnimateZWidget(
 ),
 ```
 
+<h5>--OR--</h5>
+
+```dart
+AnimateZWidget(
+  child: Icon(Icons.star),
+  animate: true,
+  animationType: AnimationType.rotate, // Or AnimationType.flip, AnimationType.scale
+),
+```
+
 **Explanation:**
 
 * This example creates a rotating star icon.

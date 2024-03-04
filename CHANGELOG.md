@@ -1,3 +1,7 @@
+## 0.0.7
+
+* updated example in README.md
+
 ## 0.0.6
 
 * updated readme.md
