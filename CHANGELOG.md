@@ -1,3 +1,7 @@
+## 0.0.4
+
+* updated docs
+
 ## 0.0.3
 
 * updated LICENSE, README.md

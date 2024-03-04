@@ -2,8 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// An enum defining the available animation types.
 enum AnimationType { rotate, flip, scale }
 
+/// Custom Animation Class
 class AnimationSpec {
   final Curve curve;
   final Duration duration;
@@ -16,10 +18,18 @@ class AnimationSpec {
   });
 }
 
+/// A widget that allows you to animate your child widget with various options.
 class AnimateZWidget extends StatefulWidget {
+  /// The child widget to be animated.
   final Widget child;
+
+  /// Whether to animate the child widget.
   final bool animate;
+
+  /// custom animation to apply.
   final AnimationSpec? customAnimation;
+
+  /// The type of animation to apply.
   final AnimationType animationType;
   const AnimateZWidget({
     super.key,
