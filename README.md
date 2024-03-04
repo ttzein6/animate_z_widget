@@ -4,7 +4,7 @@
 
 **Example Preview**
 <p align='center'>
-    <img src="https://github.com/ttzein6/animate_z_widget.dart/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20Max%20-%202024-03-04%20at%2009.44.01.gif?raw=true" />
+    <img src="https://github.com/ttzein6/animate_z_widget.dart/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20Max%20-%202024-03-04%20at%2009.44.01.gif?raw=true" height=350 />
 </p>
 **AnimateZ** is a Flutter package that allows you to add various animations to your widgets with ease. It provides a flexible API for defining custom animations or choosing from pre-defined animation types like rotation, flip, and scale.
 

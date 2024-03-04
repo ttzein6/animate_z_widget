@@ -1,3 +1,11 @@
+## 0.0.6
+
+* updated readme.md
+
+## 0.0.5
+
+* updated readme.md
+
 ## 0.0.4
 
 * updated docs
