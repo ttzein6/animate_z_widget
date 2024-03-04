@@ -1,6 +1,6 @@
 name: animate_z_widget
 description: "A Flutter package for custom simple animated widgets"
-version: 0.0.2
+version: 0.0.3
 homepage: https://tamerelzein.com
 repository: https://github.com/ttzein6/animate_z_widget.dart.git
 # This package supports all platforms listed below.
