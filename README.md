@@ -38,9 +38,7 @@ AnimateZWidget(
 * `animationType` is set to `AnimationType.rotate`.
 * `customAnimation` is used to define a custom animation with an `easeIn` curve, a duration of 500 milliseconds, and a rotation animation.
 
-### Contributing
 
-We welcome contributions to this package! Please see the CONTRIBUTING.md file for details.
 
 ### License
 See the LICENSE file for details.
