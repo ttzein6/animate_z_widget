@@ -60,7 +60,10 @@ class _AnimateZWidgetState extends State<AnimateZWidget>
   @override
   Widget build(BuildContext context) {
     if (!widget.animate) {
-      return widget.child;
+      return Hero(
+        tag: 'animate_z_widget',
+        child: widget.child,
+      );
     }
     final Animation animation = (widget.customAnimation?.tween ??
             Tween<double>(
@@ -70,33 +73,36 @@ class _AnimateZWidgetState extends State<AnimateZWidget>
             parent: _controller,
             curve: (widget.customAnimation?.curve ?? Curves.easeInOut)));
 
-    return AnimatedBuilder(
-      animation: animation,
-      builder: (context, child) {
-        final value = animation.value;
-        if (value is double) {
-          switch (widget.animationType) {
-            case AnimationType.rotate:
-              return Transform.rotate(
-                angle: value * 2 * pi,
-                child: child,
-              );
-            case AnimationType.flip:
-              return Transform.flip(
-                flipX: value > 0.5,
-                child: child,
-              );
-            case AnimationType.scale:
-              return Transform.scale(
-                scale: value,
-                child: child,
-              );
+    return Hero(
+      tag: 'animate_z_widget',
+      child: AnimatedBuilder(
+        animation: animation,
+        builder: (context, child) {
+          final value = animation.value;
+          if (value is double) {
+            switch (widget.animationType) {
+              case AnimationType.rotate:
+                return Transform.rotate(
+                  angle: value * 2 * pi,
+                  child: child,
+                );
+              case AnimationType.flip:
+                return Transform.flip(
+                  flipX: value > 0.5,
+                  child: child,
+                );
+              case AnimationType.scale:
+                return Transform.scale(
+                  scale: value,
+                  child: child,
+                );
+            }
+          } else {
+            return child ?? const SizedBox();
           }
-        } else {
-          return child ?? const SizedBox();
-        }
-      },
-      child: widget.child,
+        },
+        child: widget.child,
+      ),
     );
   }
 }

@@ -43,5 +43,4 @@ AnimateZWidget(
 We welcome contributions to this package! Please see the CONTRIBUTING.md file for details.
 
 ### License
-
-This package is licensed under the MIT License. See the LICENSE file for details.
+See the LICENSE file for details.
