@@ -1,8 +1,8 @@
 name: animate_z_widget
 description: "AnimateZ is a Flutter package that allows you to add various animations to your widgets with ease."
-version: 0.0.7
+version: 0.0.8
 homepage: https://tamerelzein.com
-repository: https://github.com/ttzein6/animate_z_widget.dart.git
+repository: https://github.com/ttzein6/animate_z_widget
 # This package supports all platforms listed below.
 platforms:
   android:
