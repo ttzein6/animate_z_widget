@@ -1,3 +1,8 @@
+## 0.0.8
+
+* updated example in repo url
+
+  
 ## 0.0.7
 
 * updated example in README.md
